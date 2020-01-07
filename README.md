@@ -137,9 +137,18 @@ búsqueda de los valores en una tabla.
   Deberá explicar detalladamente cómo se manifiestan los parámetros del efecto (frecuencia e índice de modulación) en
   la señal generada (se valorará que la explicación esté contenida en las propias gráficas, sin necesidad de
   literatura).
+  > Podemos ver a continuación la gráfica original de la señal doremi.wav con el instrumento Seno.
+  >  <img src="img/9.png" width="500" align="center">
+  > La siguiente gráfica se consigue utilizando el efecto del tremolo sobre la señal doremi.wav con el instrumento Seno.
+  >  <img src="img/10.png" width="500" align="center">
+  > La gráfica utilizando el efecto del tremolo sobre la señal doremi.wav con el instrumento Seno queda así.
+  >  <img src="img/11.png" width="500" align="center">
+  
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué resultado ha
   producido. Incluya, en el directorio `work/ejemplos`, los ficheros necesarios para apreciar el efecto, e indique,
   a continuación, la orden necesaria para generar los ficheros de audio usando el programa `synth`.
+  
+  > No se ha generado ningun efecto por nuestra cuenta.
 
 ### Síntesis FM.
 
