@@ -139,6 +139,7 @@ búsqueda de los valores en una tabla.
   literatura).
   
   > Para generar los efectos siguientes hemos utilizado los parámetros adjuntos a la siguiente tabla:
+  
   >   |         |  F  |  A  |  I  |
   >   |---------|:---:|:---:|:---:|
   >   | TREMOLO |  8  | 0.2 |  -  |
@@ -146,14 +147,17 @@ búsqueda de los valores en una tabla.
   
   * Original
   > Podemos ver a continuación la gráfica original de la señal doremi.wav con el instrumento Seno.
+  >
   >  <img src="img/9.png" width="500" align="center">
   
   * Tremolo
   > La siguiente gráfica se consigue utilizando el efecto del tremolo sobre la señal doremi.wav con el instrumento Seno. Este produce un efecto donde visualizamos una fluctuación periódica en cuanto a la amplitud de la señal, mientras que la frecuencia se mantiene constante. En cuanto al sonido, hemos podido escuchar como el tono era el mismo, y el volumen/intensidad del sonido variaba. Se ha establecido como parámetro la amplitud mínima siendo esta 0.2.
+  >
   >  <img src="img/10.png" width="500" align="center">
   
   * Vibrato
   > La gráfica utilizando el efecto del vibrato sobre la señal doremi.wav con el instrumento Seno queda así. Este produce una variación periódica de la altura o frecuencia como podemos ver en la gráfica. El sonido suena como si todo el fichero original estuviera vibrando. Para el vibrato se han especificado en primer lugar el parámetro de la variación de la altura, con un máximo de 2 debido a que se utiliza un seno. Y el parámetro de la frecuencia que se ha mantenido a 8. 
+  >
   >  <img src="img/11.png" width="500" align="center">
   
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué resultado ha
