@@ -65,25 +65,31 @@ visualizar el funcionamiento de la curva ADSR.
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
     
     * El intérprete mantiene la nota pulsada hasta su completa extinción.
-    > Y rellenamos la tabla .sco de la siguiente manera:
+      > Y rellenamos la tabla .sco de la siguiente manera:
     
-|  0   |  9  |  1  | 67 | 100 |
-|------|:---:|:---:|:--:|:---:|
-| 1300 |  0  |  1  |  0 |  0  |
+      |  0   |  9  |  1  | 67 | 100 |
+      |------|:---:|:---:|:--:|:---:|
+      | 1300 |  0  |  1  |  0 |  0  |
     
-  >  <img src="img/6.png" width="500" align="center">
-  >    
-  > - 0.0000000 0.0099670 Attack
-  > - 0.0099670 4.9964091 Decay
+      >  <img src="img/6.png" width="500" align="center">    
+     
+      > - 0.0000000 0.0099670 Attack
+      > - 0.0099670 4.9964091 Decay
 
 
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución rápida del
       sonido hasta su finalización.
       
-    >  <img src="img/7.png" width="500" align="center">
-    >    
-    > - 0.0000000 0.0110887 Attack
-    > - 0.0110887 3.7479761 Decay_(cortado)
+      > Y rellenamos la tabla .sco de la siguiente manera:
+    
+      |  0   |  9  |  1  | 67 | 100 |
+      |------|:---:|:---:|:--:|:---:|
+      |  900 |  0  |  1  |  0 |  0  |
+      
+      >  <img src="img/7.png" width="500" align="center">
+      >    
+      > - 0.0000000 0.0110887 Attack
+      > - 0.0110887 3.7479761 Decay_(cortado)
 
   - Debera representar en esta memoria *ambos* posibles finales de la nota.
   
