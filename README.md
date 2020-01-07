@@ -48,8 +48,8 @@ visualizar el funcionamiento de la curva ADSR.
 * Un instrumento con una envolvente ADSR genérica, para el que se aprecie con claridad cada uno de sus parámetros:
   ataque (A), caída (D), mantenimiento (S) y liberación (R).
   
-  <img src="img/5.png" width="500" align="center">
-
+  >  <img src="img/5.png" width="500" align="center">
+  >
   >  - 0.0000000 0.0200291 Attack
   >  - 0.0200291 0.1200021 Decay
   >  - 0.1200021 0.5000164 Sustain
@@ -60,16 +60,16 @@ visualizar el funcionamiento de la curva ADSR.
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
     * El intérprete mantiene la nota pulsada hasta su completa extinción.
     
-      <img src="img/6.png" width="500" align="center">
-        
+    >   <img src="img/6.png" width="500" align="center">
+    >    
     > - 0.0000000 0.0099670 Attack
     > - 0.0099670 4.9964091 Decay
 
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución rápida del
       sonido hasta su finalización.
       
-      <img src="img/7.png" width="500" align="center">
-       
+    >  <img src="img/7.png" width="500" align="center">
+    >    
     > - 0.0000000 0.0110887 Attack
     > - 0.0110887 3.7479761 Decay_(cortado)
 
@@ -79,8 +79,8 @@ visualizar el funcionamiento de la curva ADSR.
   ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la liberación también
   es bastante rápida.
   
-  <img src="img/8.png" width="500" align="center">
-    
+  >  <img src="img/8.png" width="500" align="center">
+  >  
   > - 0.0000000 0.0499947 Attack
   > - 0.0499947 0.8312739 Sustain
   > - 0.8312739 0.8832403 Release
