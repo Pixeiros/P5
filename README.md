@@ -57,7 +57,7 @@ visualizar el funcionamiento de la curva ADSR.
 
 * Un instrumento percusivo, como una guitarra o un piano, en el que el sonido tenga un ataque rápido, no haya
   mantenimiemto y el sonido se apague lentamente.
-  > Para el instumento de percusion en el fichero.orc escribimos lo siguiente:
+  > Para el instrumento de percusion en el fichero.orc escribimos lo siguiente:
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
      1	InstrumentDumb    ADSR_A=0.01; ADSR_D=5; ADSR_S=0; ADSR_R=0; N=250;
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,10 +85,15 @@ visualizar el funcionamiento de la curva ADSR.
   ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la liberación también
   es bastante rápida.
   
-  > Para el instumento de percusion en el fichero.orc escribimos lo siguiente:
+  > Para el instrumento plano en el fichero.orc escribimos lo siguiente:
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
      1	InstrumentDumb    ADSR_A=0.05; ADSR_D=0; ADSR_S=4; ADSR_R=0.05; N=250;
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  > Y rellenamos la tabla .sco de la siguiente manera:
+  |  0  |  9  |  1  | 67 | 100 |
+  |-----|:---:|:---:|:--:|:---:|
+  | 400 |  8  |  1  | 67 | 100 |
+  |  40 |  0  |  1  |  0 |  0  |
   >  <img src="img/8.png" width="500" align="center">
   >  
   > - 0.0000000 0.0499947 Attack
