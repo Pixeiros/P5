@@ -44,7 +44,6 @@ visualizar el funcionamiento de la curva ADSR.
     <img src="img/4.png" width="500" align="center">
   
  > - N → número de muestras de la tabla en la que almacenaremos la forma de un periodo, es 40.
-    <img src="img/5.png" width="500" align="center">
   
  
 * Un instrumento con una envolvente ADSR genérica, para el que se aprecie con claridad cada uno de sus parámetros:
