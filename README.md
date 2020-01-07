@@ -293,4 +293,5 @@ o composición. Se valorará la riqueza instrumental, su modelado y el resultado
 - Indique, a continuación, la orden necesaria para generar cada una de las señales usando los distintos ficheros.
 
 > synth instruments.orc ToyStory_A_Friend_in_me.sco ToyStory_A_Friend_in_me.wav
+
 > synth instruments.orc -e effects.orc ToyStory_A_Friend_in_me_w_effects.sco ToyStory_A_Friend_in_me_w_effects.wav
