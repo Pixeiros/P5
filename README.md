@@ -32,17 +32,16 @@ visualizar el funcionamiento de la curva ADSR.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  > - Ataque en 20ms → Ataca hasta llegar al nivel de 1 y tarda en hacerlo 20ms. 
     <img src="img/1.png" width="500" align="center">
-  
+ > 
  > - Caída en 0.1s → Cae hasta el nivel 0.4 en 0.1s.
     <img src="img/2.png" width="500" align="center">
-  
- > - Mantenimiento en 0.4 → Mientras aguanta la nota, se mantiene en el nivel 0.4. 
-     12901(nivel maximo) * 0.4 = 5175 aproximadamente el nivel en el que se mantiene.
+ > 
+ > - Mantenimiento en 0.4 → Mientras aguanta la nota, se mantiene en el nivel 0.4. Como el nivel maximo es 12901, * 0.4 = 5175 es aproximadamente el nivel en el que se mantiene.
     <img src="img/3.png" width="500" align="center">
-  
+ > 
  > - Liberación en 0.1s → En cuanto soltemos la nota cae respecto al nivel 0.1.
     <img src="img/4.png" width="500" align="center">
-  
+ > 
  > - N → número de muestras de la tabla en la que almacenaremos la forma de un periodo, es 40.
   
  
