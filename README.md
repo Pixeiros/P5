@@ -24,9 +24,25 @@ Ejercicios.
 
 Tomando como modelo un instrumento sencillo (puede usar el InstrumentDumb), genere cuatro instrumentos que permitan
 visualizar el funcionamiento de la curva ADSR.
+  
+  > Si analizamos InstrumentDumb, podemos visualizar perfectamente los parámetros de su curva ADSR. 
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
+  1	InstrumentDumb    ADSR_A=0.02; ADSR_D=0.1; ADSR_S=0.4; ADSR_R=0.1; N=40;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ > - Ataque en 20ms → Ataca hasta llegar al nivel de 1 y tarda en hacerlo 20ms. 
+ > - Caída en 0.1s → Cae hasta el nivel 0.4 en 0.1s.
+ > - Mantenimiento en 0.4 → Mientras aguanta la nota, se mantiene en el nivel 0.4
+ > - Liberación en 0.1s → En cuanto soltemos la nota cae respecto al nivel 0.1.
+ > - N → número de muestras de la tabla en la que almacenaremos la forma de un periodo, es 40.
 
+  <img src="img/1.png" width="500" align="center">
+  
+ 
 * Un instrumento con una envolvente ADSR genérica, para el que se aprecie con claridad cada uno de sus parámetros:
   ataque (A), caída (D), mantenimiento (S) y liberación (R).
+      
+  
 * Un instrumento percusivo, como una guitarra o un piano, en el que el sonido tenga un ataque rápido, no haya
   mantenimiemto y el sonido se apague lentamente.
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
