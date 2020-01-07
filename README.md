@@ -261,12 +261,15 @@ en semitonos.
   claramente, la correspondencia entre los valores `N1`, `N2` e `I` con la señal obtenida.
   
   > Para encontrar el valor de `fm` adecuado, se usa la siguente relación:
-  
-  > <img src="img/12.png" width="500" align="center">
+  > <img src="img/12.png" width="300" align="center">
     
 - Use el instrumento para generar un sonido tipo clarinete y otro tipo campana. Tome los parámetros del sonido (N1,
   N2 e I) y de la envolvente ADSR del citado artículo. Con estos sonidos, genere sendas escalas diatónicas (fichero
-  `doremi.sco`) y ponga el resultado en los ficheros `work/doremi/clarinete.wav` y `work/doremi/campana.work`.
+  `doremi.sco`) y ponga el resultado en los ficheros `work/doremi/clarinete.wav` y `work/doremi/campana.wav`.
+  
+  > Para simular el sonido del clarinete, usamos los siguientes valores proporcionados en el paper: N1 = 100, N2 = 20, I = 0.5 y para las componentes del ADSR: Attack = 0.04, D = 0, S = 0.5, R = 0.07.
+  > Para simular el sonido de la campana, usamos los siguientes valores proporcionados en el paper: N1 = 100, N2 = 140, I = 1 y para las componentes del ADSR: Attack = 0.03, D = 2, S = 0, R = 0.
+  
   * También puede colgar en el directorio work/doremi otras escalas usando sonidos interesantes. Por ejemplo,
     violines, pianos, percusiones, espadas láser de la [Guerra de las Galaxias](https://www.starwars.com/), etc.
 
@@ -288,3 +291,6 @@ o composición. Se valorará la riqueza instrumental, su modelado y el resultado
 - Coloque los ficheros generados, junto a sus ficheros `score`, `instruments` y `efffects`, en el directorio
   `work/music`.
 - Indique, a continuación, la orden necesaria para generar cada una de las señales usando los distintos ficheros.
+
+> synth instruments.orc ToyStory_A_Friend_in_me.sco ToyStory_A_Friend_in_me.wav
+> synth instruments.orc -e effects.orc ToyStory_A_Friend_in_me_w_effects.sco ToyStory_A_Friend_in_me_w_effects.wav
