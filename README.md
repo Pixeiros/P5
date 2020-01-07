@@ -139,9 +139,12 @@ búsqueda de los valores en una tabla.
   literatura).
   > Podemos ver a continuación la gráfica original de la señal doremi.wav con el instrumento Seno.
   >  <img src="img/9.png" width="500" align="center">
-  > La siguiente gráfica se consigue utilizando el efecto del tremolo sobre la señal doremi.wav con el instrumento Seno.
+  >
+  > La siguiente gráfica se consigue utilizando el efecto del tremolo sobre la señal doremi.wav con el instrumento Seno. Este produce un efecto donde visualizamos una fluctuación periódica en cuanto a la amplitud de la señal, mientras que la frecuencia se mantiene constante. En cuanto al sonido, hemos podido escuchar como el tono era el mismo, y el volumen/intensidad del sonido variaba.
+  
   >  <img src="img/10.png" width="500" align="center">
-  > La gráfica utilizando el efecto del tremolo sobre la señal doremi.wav con el instrumento Seno queda así.
+  >
+  > La gráfica utilizando el efecto del vibrato sobre la señal doremi.wav con el instrumento Seno queda así.
   >  <img src="img/11.png" width="500" align="center">
   
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué resultado ha
