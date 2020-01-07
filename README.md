@@ -262,7 +262,7 @@ en semitonos.
   
   > Para encontrar el valor de `fm` adecuado, se usa la siguente relación:
   
-  > <img src="img/10.jfif" width="500" align="center">
+  > <img src="img/12.png" width="500" align="center">
     
 - Use el instrumento para generar un sonido tipo clarinete y otro tipo campana. Tome los parámetros del sonido (N1,
   N2 e I) y de la envolvente ADSR del citado artículo. Con estos sonidos, genere sendas escalas diatónicas (fichero
