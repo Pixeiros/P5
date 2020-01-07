@@ -71,10 +71,10 @@ visualizar el funcionamiento de la curva ADSR.
 |------|:---:|:---:|:--:|:---:|
 | 1300 |  0  |  1  |  0 |  0  |
     
-    >   <img src="img/6.png" width="500" align="center">
-    >    
-    > - 0.0000000 0.0099670 Attack
-    > - 0.0099670 4.9964091 Decay
+  >  <img src="img/6.png" width="500" align="center">
+  >    
+  > - 0.0000000 0.0099670 Attack
+  > - 0.0099670 4.9964091 Decay
 
 
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución rápida del
