@@ -259,6 +259,11 @@ en semitonos.
 
 - Use el instrumento para generar un vibrato de parámetros razonables e incluya una gráfica en la que se vea,
   claramente, la correspondencia entre los valores `N1`, `N2` e `I` con la señal obtenida.
+  
+  > Para encontrar el valor de `fm` adecuado, se usa la siguente relación:
+  
+  > <img src="img/10.jfif" width="500" align="center">
+    
 - Use el instrumento para generar un sonido tipo clarinete y otro tipo campana. Tome los parámetros del sonido (N1,
   N2 e I) y de la envolvente ADSR del citado artículo. Con estos sonidos, genere sendas escalas diatónicas (fichero
   `doremi.sco`) y ponga el resultado en los ficheros `work/doremi/clarinete.wav` y `work/doremi/campana.work`.
