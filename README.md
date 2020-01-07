@@ -65,7 +65,11 @@ visualizar el funcionamiento de la curva ADSR.
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
     
     * El intérprete mantiene la nota pulsada hasta su completa extinción.
-    
+    > Y rellenamos la tabla .sco de la siguiente manera:
+      |  0   |  9  |  1  | 67 | 100 |
+      |------|:---:|:---:|:--:|:---:|
+      | 1300 |  0  |  1  |  0 |  0  |
+    >
     >   <img src="img/6.png" width="500" align="center">
     >    
     > - 0.0000000 0.0099670 Attack
@@ -90,12 +94,11 @@ visualizar el funcionamiento de la curva ADSR.
      1	InstrumentDumb    ADSR_A=0.05; ADSR_D=0; ADSR_S=4; ADSR_R=0.05; N=250;
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   > Y rellenamos la tabla .sco de la siguiente manera:
-  
  |  0  |  9  |  1  | 67 | 100 |
  |-----|:---:|:---:|:--:|:---:|
  | 400 |  8  |  1  | 67 | 100 |
  |  40 |  0  |  1  |  0 |  0  |
-  
+  >
   >  <img src="img/8.png" width="500" align="center">
   >  
   > - 0.0000000 0.0499947 Attack
