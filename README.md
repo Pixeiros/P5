@@ -1,5 +1,3 @@
-PAV - P5: síntesis musical polifónica
-=====================================
 
 Obtenga su copia del repositorio de la práctica accediendo a [Práctica 5](https://github.com/albino-pav/P5) y
 pulsando sobre el botón `Fork` situado en la esquina superior derecha. A continuación, siga las instrucciones de la
@@ -7,14 +5,14 @@ pulsando sobre el botón `Fork` situado en la esquina superior derecha. A contin
 prácticas, dar de alta al resto de integrantes como colaboradores del proyecto y crear la copias locales del
 repositorio.
 
-Como entrega deberá realizar un *pull request* con el contenido de su copia del repositorio. Recuerde que los
+Como entrega deberá realizar un pull request con el contenido de su copia del repositorio. Recuerde que los
 ficheros entregados deberán estar en condiciones de ser ejecutados con sólo ejecutar:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
+~~~~~~~~~~~~~~~~~~~.sh
   make release
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
-A modo de memoria de la práctica, complete, en este mismo documento y usando el formato *markdown*, los ejercicios
+A modo de memoria de la práctica, complete, en este mismo documento y usando el formato markdown, los ejercicios
 indicados.
 
 Ejercicios.
@@ -24,17 +22,33 @@ Ejercicios.
 
 Tomando como modelo un instrumento sencillo (puede usar el InstrumentDumb), genere cuatro instrumentos que permitan
 visualizar el funcionamiento de la curva ADSR.
+  
+  > Si analizamos InstrumentDumb, podemos visualizar perfectamente los parámetros de su curva ADSR. 
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
+  1	InstrumentDumb    ADSR_A=0.02; ADSR_D=0.1; ADSR_S=0.4; ADSR_R=0.1; N=40;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ > - Ataque en 20ms → Ataca hasta llegar al nivel de 1 y tarda en hacerlo 20ms. 
+ > - Caída en 0.1s → Cae hasta el nivel 0.4 en 0.1s.
+ > - Mantenimiento en 0.4 → Mientras aguanta la nota, se mantiene en el nivel 0.4
+ > - Liberación en 0.1s → En cuanto soltemos la nota cae respecto al nivel 0.1.
+ > - N → número de muestras de la tabla en la que almacenaremos la forma de un periodo, es 40.
 
+  <img src="img/1.png" width="500" align="center">
+  
+ 
 * Un instrumento con una envolvente ADSR genérica, para el que se aprecie con claridad cada uno de sus parámetros:
   ataque (A), caída (D), mantenimiento (S) y liberación (R).
-* Un instrumento *percusivo*, como una guitarra o un piano, en el que el sonido tenga un ataque rápido, no haya
+      
+  
+* Un instrumento percusivo, como una guitarra o un piano, en el que el sonido tenga un ataque rápido, no haya
   mantenimiemto y el sonido se apague lentamente.
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
-    * El intérprete mantiene la nota *pulsada* hasta su completa extinción.
+    * El intérprete mantiene la nota pulsada hasta su completa extinción.
     * El intérprete da por finalizada la nota antes de su completa extinción, iniciándose una disminución rápida del
       sonido hasta su finalización.
-  - Debera representar en esta memoria **ambos** posibles finales de la nota.
-* Un instrumento *plano*, como los de cuerdas frotadas (violines y semejantes) o algunos de viento. En ellos, el
+  - Debera representar en esta memoria *ambos* posibles finales de la nota.
+* Un instrumento plano, como los de cuerdas frotadas (violines y semejantes) o algunos de viento. En ellos, el
   ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la liberación también
   es bastante rápida.
 
@@ -44,7 +58,7 @@ títulos adecuados en la propia gráfica (se valorará positivamente esta altern
 
 ### Instrumentos Dumb y Seno.
 
-Implemente el instrumento `Seno` tomando como modelo el `InstrumentDumb`. La señal **deberá** formarse mediante
+Implemente el instrumento `Seno` tomando como modelo el `InstrumentDumb`. La señal *deberá* formarse mediante
 búsqueda de los valores en una tabla.
 
 - Incluya, a continuación, el código del fichero `seno.cpp` con los métodos de la clase Seno.
@@ -59,7 +73,7 @@ búsqueda de los valores en una tabla.
 - Incluya dos gráficas en las que se vean, claramente, el efecto del trémolo y el vibrato sobre una señal sinusoidal.
   Deberá explicar detalladamente cómo se manifiestan los parámetros del efecto (frecuencia e índice de modulación) en
   la señal generada (se valorará que la explicación esté contenida en las propias gráficas, sin necesidad de
-  *literatura*).
+  literatura).
 - Si ha generado algún efecto por su cuenta, explique en qué consiste, cómo lo ha implementado y qué resultado ha
   producido. Incluya, en el directorio `work/ejemplos`, los ficheros necesarios para apreciar el efecto, e indique,
   a continuación, la orden necesaria para generar los ficheros de audio usando el programa `synth`.
@@ -68,21 +82,21 @@ búsqueda de los valores en una tabla.
 
 Construya un instrumento basado en síntesis FM, siguiendo las explicaciones contenidas en el enunciado y el artículo
 de [John M. Chowning](https://ccrma.stanford.edu/sites/default/files/user/jc/fm_synthesispaper-2.pdf). El instrumento
-usará como parámetros **básicos** los números `N1` y `N2`, y el índice de modulación `I`, que deberá venir expresado
+usará como parámetros *básicos* los números `N1` y `N2`, y el índice de modulación `I`, que deberá venir expresado
 en semitonos.
 
-- Use el instrumento para generar un vibrato de *parámetros razonables* e incluya una gráfica en la que se vea,
+- Use el instrumento para generar un vibrato de parámetros razonables e incluya una gráfica en la que se vea,
   claramente, la correspondencia entre los valores `N1`, `N2` e `I` con la señal obtenida.
 - Use el instrumento para generar un sonido tipo clarinete y otro tipo campana. Tome los parámetros del sonido (N1,
   N2 e I) y de la envolvente ADSR del citado artículo. Con estos sonidos, genere sendas escalas diatónicas (fichero
   `doremi.sco`) y ponga el resultado en los ficheros `work/doremi/clarinete.wav` y `work/doremi/campana.work`.
-  * También puede colgar en el directorio work/doremi otras escalas usando sonidos *interesantes*. Por ejemplo,
+  * También puede colgar en el directorio work/doremi otras escalas usando sonidos interesantes. Por ejemplo,
     violines, pianos, percusiones, espadas láser de la [Guerra de las Galaxias](https://www.starwars.com/), etc.
 
 ### Orquestación usando el programa synth.
 
 Use el programa `synth` para generar canciones a partir de su partitura MIDI. Como mínimo, deberá incluir la
-*orquestación* de la canción *You've got a friend in me* (fichero `ToyStory_A_Friend_in_me.sco`) del genial
+orquestación de la canción You've got a friend in me (fichero `ToyStory_A_Friend_in_me.sco`) del genial
 [Randy Newman](https://open.spotify.com/artist/3HQyFCFFfJO3KKBlUfZsyW/about).
 
 - En este (lamentable) arreglo, la pista 1 corresponde al instrumento solista (puede ser un piano, flautas, violines,
@@ -91,8 +105,8 @@ Use el programa `synth` para generar canciones a partir de su partitura MIDI. Co
 - Indique, a continuación, la orden necesaria para generar la señal (suponiendo que todos los archivos necesarios
   están en direcotorio indicado).
 
-También puede orquestar otros temas más complejos, como la banda sonora de *Hawaii5-0* o el villacinco de John
-Lennon *Happy Xmas (War Is Over)* (fichero `The_Christmas_Song_Lennon.sco`), o cualquier otra canción de su agrado
+También puede orquestar otros temas más complejos, como la banda sonora de Hawaii5-0 o el villacinco de John
+Lennon Happy Xmas (War Is Over) (fichero `The_Christmas_Song_Lennon.sco`), o cualquier otra canción de su agrado
 o composición. Se valorará la riqueza instrumental, su modelado y el resultado final.
 - Coloque los ficheros generados, junto a sus ficheros `score`, `instruments` y `efffects`, en el directorio
   `work/music`.
