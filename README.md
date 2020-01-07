@@ -57,7 +57,13 @@ visualizar el funcionamiento de la curva ADSR.
 
 * Un instrumento percusivo, como una guitarra o un piano, en el que el sonido tenga un ataque rápido, no haya
   mantenimiemto y el sonido se apague lentamente.
+  > Para el instumento de percusion en el fichero.orc escribimos lo siguiente:
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
+     1	InstrumentDumb    ADSR_A=0.01; ADSR_D=5; ADSR_S=0; ADSR_R=0; N=250;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
   - Para un instrumento de este tipo, tenemos dos situaciones posibles:
+    
     * El intérprete mantiene la nota pulsada hasta su completa extinción.
     
     >   <img src="img/6.png" width="500" align="center">
@@ -79,6 +85,10 @@ visualizar el funcionamiento de la curva ADSR.
   ataque es relativamente rápido hasta alcanzar el nivel de mantenimiento (sin sobrecarga), y la liberación también
   es bastante rápida.
   
+  > Para el instumento de percusion en el fichero.orc escribimos lo siguiente:
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
+     1	InstrumentDumb    ADSR_A=0.05; ADSR_D=0; ADSR_S=4; ADSR_R=0.05; N=250;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   >  <img src="img/8.png" width="500" align="center">
   >  
   > - 0.0000000 0.0499947 Attack
