@@ -1,1 +1,1 @@
-1	InstrumentDumb	ADSR_A=0.02; ADSR_D=0.5; ADSR_S=0.4; ADSR_R=0.1; N=40;
+1   SintesisFM1  ADSR_A=0.05; ADSR_D=0; ADSR_S=4; ADSR_R=0.05; N=40;   

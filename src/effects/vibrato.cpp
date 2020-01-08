@@ -95,3 +95,9 @@ void Vibrato::operator()(std::vector<float> &x){
 	x = xout;
 }
 
+KeyValue kv(param);
+  if (!kv.to_float("I",I))
+    I = 1; //default value
+  I = 1. - pow(2, -I / 12.);
+  if (!kv.to_float("fm",fm))
+    fm = 5; //default value

@@ -1,0 +1,1 @@
+1    SintesisFM1    ADSR_A=0.01; ADSR_D=0.05; ADSR_S=0.4; ADSR_R=0.1; N=20; fm=6; I=0.04;
