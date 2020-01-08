@@ -269,7 +269,7 @@ en semitonos.
   `doremi.sco`) y ponga el resultado en los ficheros `work/doremi/clarinete.wav` y `work/doremi/campana.wav`.
   
   > Para simular el sonido del clarinete, usamos los siguientes valores proporcionados en el paper: N1 = 100, N2 = 20, I = 0.5 y para las componentes del ADSR: Attack = 0.04, D = 0, S = 0.5, R = 0.07.
-  
+  >
   > Para simular el sonido de la campana, usamos los siguientes valores proporcionados en el paper: N1 = 100, N2 = 140, I = 1 y para las componentes del ADSR: Attack = 0.03, D = 2, S = 0, R = 0.
   
   * También puede colgar en el directorio work/doremi otras escalas usando sonidos interesantes. Por ejemplo,
@@ -288,7 +288,7 @@ orquestación de la canción You've got a friend in me (fichero `ToyStory_A_Frie
   están en direcotorio indicado).
   
   > synth Toy_Story.orc ToyStory_A_Friend_in_me.sco music/ToyStory_A_Friend_in_me.wav
-
+  >
   > synth Toy_Story.orc -e effects.orc ToyStory_A_Friend_in_me_w_effects.sco    music/ToyStory_A_Friend_in_me_w_effects.wav
 
 
