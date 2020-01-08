@@ -261,6 +261,7 @@ en semitonos.
   claramente, la correspondencia entre los valores `N1`, `N2` e `I` con la señal obtenida.
   
   > Para encontrar el valor de `fm` adecuado, se usa la siguente relación:
+  >
   > <img src="img/12.png" width="300" align="center">
     
 - Use el instrumento para generar un sonido tipo clarinete y otro tipo campana. Tome los parámetros del sonido (N1,
@@ -285,13 +286,13 @@ orquestación de la canción You've got a friend in me (fichero `ToyStory_A_Frie
 - Indique, a continuación, la orden necesaria para generar la señal (suponiendo que todos los archivos necesarios
   están en direcotorio indicado).
 
+> synth Toy_Story.orc ToyStory_A_Friend_in_me.sco music/ToyStory_A_Friend_in_me.wav
+>
+> synth Toy_Story.orc -e effects.orc ToyStory_A_Friend_in_me_w_effects.sco music/ToyStory_A_Friend_in_me_w_effects.wav
+
 También puede orquestar otros temas más complejos, como la banda sonora de Hawaii5-0 o el villacinco de John
 Lennon Happy Xmas (War Is Over) (fichero `The_Christmas_Song_Lennon.sco`), o cualquier otra canción de su agrado
 o composición. Se valorará la riqueza instrumental, su modelado y el resultado final.
 - Coloque los ficheros generados, junto a sus ficheros `score`, `instruments` y `efffects`, en el directorio
   `work/music`.
 - Indique, a continuación, la orden necesaria para generar cada una de las señales usando los distintos ficheros.
-
-> synth Toy_Story.orc ToyStory_A_Friend_in_me.sco music/ToyStory_A_Friend_in_me.wav
-
-> synth Toy_Story.orc -e effects.orc ToyStory_A_Friend_in_me_w_effects.sco music/ToyStory_A_Friend_in_me_w_effects.wav
